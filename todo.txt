@@ -1,0 +1,4 @@
+# CSS/Design
+# Write Mac instructions
+# Write PC instructions
+# Make angular shit more elegant 

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="hostsFile" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="hostsFile" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="hostsFile" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="hostsFile" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>How to Edit your Hosts File</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" type="text/css" ref="bower_components/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>How to Edit Your Hosts File</h1>
+        </div>
+        <div ng-controller="hostsFileViewerCtrl as hosts" class="hosts">
+            <div class="nav">
+                <!-- TOOD: Pull this from a service/list. Make linkable to set scope. ng-repeat or something similar -->
+                <div class="nav-item">
+                    Choose for me
+                </div>
+                <div class="nav-item">
+                    Mac
+                </div>
+                <div class="nav-item">
+                    Windows
+                </div>
+                <div class="nav-item">
+                    Mobile
+                </div>
+            </div>
+           <div ng-include="hosts.getPartialUrl()"></div>
+        </div> 
+        <div class="footer">
+            Made with love by @jchapa and @brstorrie
+        </div>
+    </div>
+    
+    <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/components/hostsFileViewer/hostsFileViewerController.js"></script>
+    <script src="bower_components/angular-bowser/src/angular-bowser.js"></script>
+</body>
+</html>

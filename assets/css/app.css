@@ -1,0 +1,13 @@
+body {
+    background:#fff;
+}
+
+.container {
+    height:100%;
+    width:100%;
+    width:75%;
+    margin:auto;
+}
+.header {
+   text-align:center; 
+}
