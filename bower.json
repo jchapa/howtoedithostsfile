@@ -1,11 +1,11 @@
 {
-  "name": "howtoedithostsfile",
-  "homepage": "index.php",
+  "name": "edithostsfile",
+  "homepage": "https://github.com/jchapa/howtoedithostsfile",
   "authors": [
     "Jack Chapa <jack@jackchapa.com>",
-    "Ben Storrie <brstorrie@gmail.com>"
+    "Ben Storrie <ben@benstorrie.com>"
   ],
-  "description": "how to edit hosts file",
+  "description": "How To Edit Hosts File",
   "main": "",
   "license": "MIT",
   "private": true,
@@ -15,5 +15,10 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "angular": "angularjs#^1.5.6",
+    "angular-bowser": "^0.0.4",
+    "html5-boilerplate": "^5.3.0"
+  }
 }
