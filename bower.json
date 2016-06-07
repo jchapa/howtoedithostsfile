@@ -19,6 +19,7 @@
   "dependencies": {
     "angular": "angularjs#^1.5.6",
     "angular-bowser": "^0.0.4",
-    "html5-boilerplate": "^5.3.0"
+    "html5-boilerplate": "^5.3.0",
+    "skeleton": "^2.0.4"
   }
 }
