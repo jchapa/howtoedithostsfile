@@ -7,18 +7,37 @@ angular.module('hostsFile')
     // Clean up or move?
     var getOs = function (){
         if (bowser.mac) {
-            return "Mac"
+            return "Mac";
         }
         else if (bowser.windows) {
-            return "Windows"            
+            return "Windows";   
         }
         else {
-            return "Windows"
+            return "Windows";
         }
     }
     
+    var browserView = getOs();
+    
     this.getPartialUrl = function() {
-        return includePath + "hostsFileViewer" + getOs() + ".html";
+        return includePath + "hostsFileViewer" + browserView + ".html";
+    }
+    
+    $scope.setBrowser = function(strBrowser) {
+        strBrowser = strBrowser || "auto";
+        
+        switch(strBrowser) {
+            case "mac":
+                browserView = "Mac";
+                break;
+            case "windows":
+                browserView = "Windows";
+                break;
+            case "auto":
+            default:
+                browserView = getOs();
+                break;
+        }
     }
     
 }])
