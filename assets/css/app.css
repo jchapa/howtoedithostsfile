@@ -56,3 +56,32 @@ body {
 /* Re-overiding the width 100% declaration to match size of % based container */
 .has-docked-nav .navbar > .container {
     width: 80%; }
+    
+    
+/* Walkthrough CSS */
+
+.walkthrough
+{
+    margin: 10px;
+    width: 100%;
+}
+
+.walkthrough li
+{
+    font-size:24px;
+}
+
+.walkthrough li span
+{
+    clear:both;
+}
+
+.walkthrough li img 
+{
+    max-width:600px;
+    height:auto;
+    margin:10px;
+    margin-left:20px;
+    display:block;
+    clear:left;
+}
