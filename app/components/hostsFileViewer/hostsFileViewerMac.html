@@ -1,1 +1,52 @@
-<p>Test Mac</p>
+<div class="walkthrough">
+    <h2>Mac OS X</h2>
+
+    <ol class="walkthrough">
+        <li>
+            <span>
+                Open Spotlight (Command + Space, or the magnifying glass in the top right),
+               type "terminal" and press enter
+            </span>
+            <img src="assets/img/osx/1.png" alt="Step 1"/>
+        </li>
+        <li>
+            <span>
+                Enter the command 'sudo vi /etc/hosts' (without quotes),
+                press enter. You will be prompted for your password
+            </span>
+            <img src="assets/img/osx/2.png" alt="Step 2"/>
+        </li>
+        <li>
+            <span>
+                Enter your password, and press enter. You will be presented with the default hosts file.
+            </span>
+            <img src="assets/img/osx/3.png" alt="Step 3"/>
+        </li>
+        <li>
+            <span>
+                Press "i" to enter insert mode in vim, 
+                and use your arrow keys to move to a blank line,
+                and enter the source and desired alias, separated by a space. 
+                (Usually an IP address, followed by a url-style alias, as shown below)
+            </span>
+            <img src="assets/img/osx/4.png" alt="Step 4"/>
+        </li>
+        <li>
+            <span>
+                Press Esc, then :wq, followed by Enter to write and save changes.
+                After that is complete, ping your new alias to ensure that it is resolving
+                to the new IP address!
+            </span>
+            <img src="assets/img/osx/5.png" alt="Step 5"/>
+        </li>
+        <li>
+            <span>
+                That's it! In this example we've used a typical router IP address, 
+                but any IP address can be used
+            </span>
+            <!-- TODO get congratulatory image? -->
+            <!--<img src="assets/img/osx/congrats.png" alt="Done!" />-->
+        </li>
+    </ol>
+    
+</div>
