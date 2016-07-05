@@ -5,6 +5,6 @@ before_script:
   - 'npm install -g grunt-cli'
 
 after_success:
-  - "echo $FTP_USER"
-  - "find . -type f -exec curl --verbose --ftp-create-dirs -T {} -u $FTP_USER:$FTP_PASS $FTP_HOST/howtoedithostsfile.com/ \\;"
+  - "echo %{FTP_USER}"
+  - "find . -type f -exec curl --verbose --ftp-create-dirs -T {} -u %{FTP_USER}:%{FTP_PASS} %{FTP_HOST}/howtoedithostsfile.com/ \\;"
  
