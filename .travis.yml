@@ -9,5 +9,5 @@ before_script:
   - 'npm install -g grunt-cli'
 
 after_success:
-  - "find . -type f -exec curl --ftp-create-dirs -T {} -u $FTP_USER:$FTP_PASS ftp://$FTP_HOST/howtoedithostsfile.com/ \\;"
+  - "find . -type f -exec curl --verbose --ftp-create-dirs -T {} -u $FTP_USER:$FTP_PASS ftp://$FTP_HOST/howtoedithostsfile.com/ \\;"
  
