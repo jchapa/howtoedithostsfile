@@ -1,5 +1,6 @@
 # CSS/Design
-# Write Mac instructions
-# Write PC instructions
-# Make angular shit more elegant 
-# 
+# Make angular code more elegant
+# Make mobile-compatible
+## Make images mobile-ready
+## Add device CSS
+# Add tests
